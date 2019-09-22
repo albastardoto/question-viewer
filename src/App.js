@@ -1,10 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
-import questions from './data.json';
-
-function App() {
-  console.log(questions);
-  const idquestions = questions.map((question, index) => {
+function App(props) {
+  const idquestions = props.questions.map((question, index) => {
     return {...question, id: index};
   });
   const [state, setState] = useState({
