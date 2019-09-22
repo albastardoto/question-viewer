@@ -23,11 +23,16 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.question {
+  margin-bottom: 100px;
+}
+.question img {
+  max-height: 250px;
+}
+
+.choice {
+  color: red;
+}
+.correctChoice {
+  color: green;
 }
